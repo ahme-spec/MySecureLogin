@@ -64,8 +64,11 @@ Configurer les fichier register.php et login.php :
 
 
 $host = "localhost";
+
 $dbname = "users_db";
+
 $username = "root";
+
 $password = "TON_MOT_DE_PASSE"; // Mets ton mot de passe MySQL
 
 
