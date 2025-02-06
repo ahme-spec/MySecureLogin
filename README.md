@@ -1,4 +1,4 @@
-                                                                 Authentification sécurisée en PHP :
+                                Authentification sécurisée en PHP :
 
 
 Description du projet :
