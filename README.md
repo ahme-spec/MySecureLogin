@@ -1,29 +1,7 @@
                                                                  Authentification sécurisée en PHP :
 
 
-----------------------------------------------------------------> Arborescence du projet <----------------------------------------------------
-
-|
-│── /assets
-│   ├── logo.png          # Logo du site
-|         
-│── /css
-│   ├── style.css         # Fichier de styles CSS
-|
-│── /js
-│   ├── script.js         # Scripts JavaScript pour interactions dynamiques
-|
-│── /views
-│   ├── register.php      # Page d'inscription
-│   ├── login.php         # Page de connexion
-|
-│── site.php              # Page d'accueil
-|
-│── README.md             # Documentation du projet
-
-
-
-------------------------------------------------------------------> Description du projet : <----------------------------------------------------
+Description du projet :
 
 
 Ce projet est une implémentation sécurisée d'un système d'authentification en PHP avec :
@@ -39,7 +17,9 @@ Ce projet est une implémentation sécurisée d'un système d'authentification e
 5) Regénération de l'ID de session après connexion pour éviter le vol de session.
 
 
--------------------------------------------------------------> Les Technologies utilisées : <----------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+
+Les Technologies utilisées :
 
 1) PHP 7.4 ou supérieur
 
@@ -54,7 +34,9 @@ Ce projet est une implémentation sécurisée d'un système d'authentification e
 4) phpMyAdmin
 
 
-----------------------------------------------------------> Configuration de la base de données : <----------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+
+Configuration de la base de données : 
 
 CREATE DATABASE users_db;
 
@@ -74,7 +56,9 @@ CREATE TABLE login_attempts (
     ip_address VARCHAR(45) NOT NULL
 );
 
--------------------------------------------------------------> Configurer les fichier register.php et login.php : <------------------------------------------
+--------------------------------------------------------------------------------------------------------
+
+Configurer les fichier register.php et login.php : 
 
 <?php
 $host = "localhost";
@@ -106,7 +90,9 @@ $ sudo /opt/lampp/lampp status
 2) Puis accède à : http://localhost/phpmyadmin/
 
 
---------------------------------------------------------------------> Sécurité <-------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+
+Sécurité :
 
 1) Hachage des mots de passe (password_hash())
 
@@ -118,11 +104,12 @@ $ sudo /opt/lampp/lampp status
 
 5) Protection du formulaire contre les attaques XSS et CSRF : htmlspecialchars() | $_SESSION['csrf_token'] = bin2hex(random_bytes(32)) .....
 
+--------------------------------------------------------------------------------------------------------
 
---------------------------------------------------------------------> Auteur <--------------------------------------------------------------------------------
+Auteur :
 
 IZEKKI Ahmed
 
 contact : ahmedizekki@hotmail.com
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
