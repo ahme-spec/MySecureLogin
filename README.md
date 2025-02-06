@@ -90,7 +90,9 @@ $ sudo /opt/lampp/lampp status
     MySQL is running.
     ProFTPD is running.
 
-2) Puis accède à : http://localhost/phpmyadmin/
+2) Puis accède à :
+3) http://localhost/phpmyadmin/
+4) https://localhost/projet_security/site.php
 
 
 --------------------------------------------------------------------------------------------------------
