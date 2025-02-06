@@ -43,6 +43,7 @@ CREATE DATABASE users_db;
 USE users_db;
 
 CREATE TABLE users (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(255) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
@@ -50,6 +51,7 @@ CREATE TABLE users (
 );
 
 CREATE TABLE login_attempts (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(255) NOT NULL,
     attempt_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -60,21 +62,17 @@ CREATE TABLE login_attempts (
 
 Configurer les fichier register.php et login.php : 
 
-<?php
+
 $host = "localhost";
 $dbname = "users_db";
 $username = "root";
 $password = "TON_MOT_DE_PASSE"; // Mets ton mot de passe MySQL
 
-try {
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
-    die("Erreur de connexion : Accès refusé");
-}
-?>
 
-------------------------------------------------------------------> Lancer le serveur local <------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------
+
+Lancer le serveur local :
 
 1) Si tu utilises XAMPP, démarre Apache et MySQL :
 
