@@ -16,6 +16,8 @@ Ce projet est une implémentation sécurisée d'un système d'authentification e
 
 5) Regénération de l'ID de session après connexion pour éviter le vol de session.
 
+....
+
 
 --------------------------------------------------------------------------------------------------------
 
@@ -103,7 +105,9 @@ Sécurité :
 
 4) Protection contre le brute force (limitation des tentatives)
 
-5) Protection du formulaire contre les attaques XSS et CSRF : htmlspecialchars() | $_SESSION['csrf_token'] = bin2hex(random_bytes(32)) .....
+5) Protection du formulaire contre les attaques XSS et CSRF : htmlspecialchars() | $_SESSION['csrf_token'] = bin2hex(random_bytes(32))
+
+.....
 
 --------------------------------------------------------------------------------------------------------
 
